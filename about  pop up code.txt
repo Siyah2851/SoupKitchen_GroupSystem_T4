@@ -1,0 +1,41 @@
+<!--Sign up button-->
+  <button class="open-button" type="submit" <div style="width:100px; min-height:30px; background-color:white; font-family: Times New Roman ;color:red; float:right" onclick="openForm()">SIGN IN</button>
+    <!--End navigation bar -->
+	
+	          <!--Pop-up Form -->
+                  <div class="form-popup" id="myForm">
+                           <form  class="form-container">
+                              <label for="email" style="color:black"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" id="email" required>
+
+                                    <label for="psw" style="color:black"><b>Password</b></label>
+                                      <input type="password" placeholder="Enter Password" id="psw" required>
+
+                                          <button type="button" id="submit" class="btn" onclick="validation()">login</button>
+                                              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                                 </form>
+       <!--Javascript -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script>
+  function validation() {
+ 
+  swal("Thank you","Successfully Signed in", "success");
+ }
+ function myFunction() {
+ swal ("Thank you for subscribing ","you'll be notified of any alerts","success")
+ 
+ }
+ 
+
+  </script>
+</div>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
